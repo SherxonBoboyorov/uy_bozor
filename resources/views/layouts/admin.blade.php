@@ -27,12 +27,35 @@
                     background-color: #007bff;
                 }
             </style>
-            <span class="brand-text font-weight-light" style="margin-left: 30px">Uy Bozor</span>
+            <span class="brand-text font-weight-light" style="margin-left: 70px">Uy Bozor</span>
         </a>
         <div class="sidebar">
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
+                       {{-- start  --}}
+                       <li class="nav-item">
+                        <a href="{{ route('slider.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                            Sliders
+                             <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                        {{-- <ul class="nav nav-treeview"> --}}
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('slider.index') }}" class="nav-link">
+                               <p>All</p>
+                            </a>
+                        </li> --}}
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('slider.create') }}" class="nav-link">
+                               <p>Add</p>
+                            </a>
+                        </li> --}}
+                        {{-- </ul> --}}
+                     </li>
+                    {{-- end  --}}
 
 
                 </ul>
