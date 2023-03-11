@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'Sunmor-Imports'),
+    'url' => env('APP_URL', 'Laravel'),
 
     'asset_url' => env('ASSET_URL'),
 
