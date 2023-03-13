@@ -11,6 +11,9 @@ use App\Http\Controllers\Admin\OptionsController;
 use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 
+use App\Http\Controllers\Front\IndexController;
+use App\Http\Controllers\Front\AboutController;
+
 
 
 Auth::routes();
@@ -23,7 +26,7 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(static function ()
         'slider' => SliderController::class,
         'page' => PageController::class,
         'category' => CategoryController::class,
-        'options' => OptionsController::class
+        'options' => OptionsController::class,
     ]);
 });
 
@@ -32,7 +35,8 @@ Route::group(
         'prefix' => LaravelLocalization::setLocale(),
         'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
     ], function(){
-     //
+        Route::get('/', [IndexController::class, 'homepage'])->name('/');
+        Route::get('about', [AboutController::class, 'about'])->name('about');
  });
 
 

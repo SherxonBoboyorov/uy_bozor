@@ -1,0 +1,82 @@
+// about start
+
+.about{
+    position: relative;
+    margin-bottom: 80px;
+
+    &__img{
+        @include fiximg(50%,auto,true);
+        float: right;
+        margin-left: 80px;
+        margin-bottom: 20px;
+        img{
+            aspect-ratio: 1;
+            max-height: 700px;
+        }
+    }
+
+    &__text{
+        @include fontAll(18px,400,$text);
+        line-height: 150%;
+        text-align: justify;
+        margin-top: 30px;
+
+        h1,h2,h3,h4,h5,h6,em,strong{
+            font-size: 110%;
+            color:$title;
+            font-weight: 700;
+            font-style: normal;
+            display: inline-block;
+        }
+
+        a{
+            font-size: 110%;
+            color:$title;
+            font-weight: 700;
+            font-style: normal;
+            display: inline-block;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin: 20px 0;
+            max-height: 800px;
+            min-height: 200px;
+            object-position: center center;
+        }
+    }
+}
+
+// about end
+
+@media (max-width:1250px){
+    .about__img {
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+
+    .about__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:800px){
+    .about__img {
+        width: 100%;
+        float: inherit;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .about__list {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .about__text {
+        margin-top: 20px;
+    }
+}
