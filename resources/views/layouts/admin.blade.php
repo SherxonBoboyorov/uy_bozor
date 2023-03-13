@@ -38,7 +38,31 @@
                         <a href="{{ route('slider.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
                         <p>
-                            Sliders
+                            Слайдер
+                             <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                        {{-- <ul class="nav nav-treeview"> --}}
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('slider.index') }}" class="nav-link">
+                               <p>All</p>
+                            </a>
+                        </li> --}}
+                        {{-- <li class="nav-item">
+                            <a href="{{ route('slider.create') }}" class="nav-link">
+                               <p>Add</p>
+                            </a>
+                        </li> --}}
+                        {{-- </ul> --}}
+                     </li>
+                    {{-- end  --}}
+
+                  {{-- start  --}}
+                    <li class="nav-item">
+                        <a href="{{ route('page.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                             О нас
                              <i class="right fas fa-angle-left"></i>
                         </p>
                         </a>

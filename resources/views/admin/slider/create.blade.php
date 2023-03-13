@@ -28,7 +28,6 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         {{ $errors->first('title') }}
-
                                     </div>
                                 @endif
                             </div>
