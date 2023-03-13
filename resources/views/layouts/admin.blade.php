@@ -33,7 +33,7 @@
             <nav class="mt-2">
                 <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
-                       {{-- start  --}}
+                    {{-- start  --}}
                        <li class="nav-item">
                         <a href="{{ route('slider.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
@@ -42,23 +42,11 @@
                              <i class="right fas fa-angle-left"></i>
                         </p>
                         </a>
-                        {{-- <ul class="nav nav-treeview"> --}}
-                        {{-- <li class="nav-item">
-                            <a href="{{ route('slider.index') }}" class="nav-link">
-                               <p>All</p>
-                            </a>
-                        </li> --}}
-                        {{-- <li class="nav-item">
-                            <a href="{{ route('slider.create') }}" class="nav-link">
-                               <p>Add</p>
-                            </a>
-                        </li> --}}
-                        {{-- </ul> --}}
-                     </li>
+                      </li>
                     {{-- end  --}}
 
-                  {{-- start  --}}
-                    <li class="nav-item">
+                    {{-- start  --}}
+                      <li class="nav-item">
                         <a href="{{ route('page.index') }}" class="nav-link">
                         <i class="nav-icon"></i>
                         <p>
@@ -66,22 +54,20 @@
                              <i class="right fas fa-angle-left"></i>
                         </p>
                         </a>
-                        {{-- <ul class="nav nav-treeview"> --}}
-                        {{-- <li class="nav-item">
-                            <a href="{{ route('slider.index') }}" class="nav-link">
-                               <p>All</p>
-                            </a>
-                        </li> --}}
-                        {{-- <li class="nav-item">
-                            <a href="{{ route('slider.create') }}" class="nav-link">
-                               <p>Add</p>
-                            </a>
-                        </li> --}}
-                        {{-- </ul> --}}
-                     </li>
+                      </li>
                     {{-- end  --}}
 
-
+                    {{-- start  --}}
+                    <li class="nav-item">
+                        <a href="{{ route('category.index') }}" class="nav-link">
+                        <i class="nav-icon"></i>
+                        <p>
+                             Категория
+                             <i class="right fas fa-angle-left"></i>
+                        </p>
+                        </a>
+                      </li>
+                    {{-- end  --}}
                 </ul>
             </nav>
         </div>

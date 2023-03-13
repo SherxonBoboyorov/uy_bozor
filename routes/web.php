@@ -6,6 +6,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\Admin\HomeController;
 use App\Http\Controllers\Admin\SliderController;
 use App\Http\Controllers\Admin\PageController;
+use App\Http\Controllers\Admin\CategoryController;
 use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 
@@ -19,7 +20,8 @@ Route::middleware(['role:admin'])->prefix('dashboard')->group(static function ()
     Route::get('/', [HomeController::class, 'index'])->name('homeAdmin');
     Route::resources([
         'slider' => SliderController::class,
-        'page' => PageController::class
+        'page' => PageController::class,
+        'category' => CategoryController::class
     ]);
 });
 

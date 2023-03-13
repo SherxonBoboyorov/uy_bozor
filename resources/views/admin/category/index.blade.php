@@ -8,13 +8,13 @@
             <div class="row">
                 <div class="col-sm-12">
                     <div class="page-title-box">
-                        <h4 class="page-title">Список слайдеров</h4>
+                        <h4 class="page-title">Список Категория</h4>
                     </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
 
-            <a href="{{ route('slider.create')}}" class="btn bg-success mb-3">Добавить слайдер +</a>
+            <a href="{{ route('category.create')}}" class="btn bg-success mb-3">Добавить Категория +</a>
 
             <div class="card">
                 <div class="card-body">
@@ -34,28 +34,22 @@
                         <thead>
                         <tr>
                             <th style="width: 2%;">#</th>
-                            <th>Изображения</th>
                             <th>Заголовок</th>
-                            <th>Описание</th>
                             <th colspan="2" style="width: 2%;">Действий</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($sliders as $slider)
+                        @foreach ($categories as $category)
                             <tr>
-                                <td>{{ $slider->id }}</td>
+                                <td>{{ $category->id }}</td>
+                                <td>{{ $category->title }}</td>
                                 <td>
-                                    <img src="{{ asset($slider->image) }}" alt="" width="35" height="35">
-                                </td>
-                                <td>{{ $slider->title }}</td>
-                                <td>{{ $slider->description }}</td>
-                                <td>
-                                    <a href="{{ route('slider.edit', $slider->id) }}" class="btn btn-primary btn-icon">
+                                    <a href="{{ route('category.edit', $category->id) }}" class="btn btn-primary btn-icon">
                                         <i class="fa fa-edit">Изменить</i>
                                     </a>
                                 </td>
                                 <td>
-                                    <form action="{{ route('slider.destroy', $slider->id) }}" method="POST">
+                                    <form action="{{ route('category.destroy', $category->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-danger btn-icon">
