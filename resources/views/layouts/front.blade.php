@@ -41,7 +41,7 @@
                                 </li>
 
                                 <li>
-                                    <a href="categories.html" class="header__link">Категории</a>
+                                    <a href="{{ route('categories', ['id' => 1]) }}" class="header__link">Категории</a>
                                 </li>
 
                                 <li>

@@ -13,6 +13,7 @@ use UniSharp\Laravel\LaravelFilemanager\Lfm;
 
 use App\Http\Controllers\Front\IndexController;
 use App\Http\Controllers\Front\AboutController;
+use App\Http\Controllers\Front\CategorysController;
 
 
 
@@ -37,6 +38,7 @@ Route::group(
     ], function(){
         Route::get('/', [IndexController::class, 'homepage'])->name('/');
         Route::get('about', [AboutController::class, 'about'])->name('about');
+        Route::get('categories/{id?}', [CategorysController::class, 'list'])->name('categories');
  });
 
 

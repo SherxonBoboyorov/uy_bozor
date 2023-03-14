@@ -29,11 +29,9 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         {{ $errors->first('title') }}
-
                                     </div>
                                 @endif
                             </div>
-
                         </div>
 
                         <div class="row" style="margin-top: 15px">

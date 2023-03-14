@@ -29,35 +29,13 @@
         <section class="container">
             <div class="categories__cart">
                 <ul class="categories__filter">
+                    @foreach ($categories as $category)
                     <li>
-                        <a href="#!" class="categories__filter__link active">
-                            Участок
+                        <a href="{{ route('categories', ['id' => $category->id])}}" class="categories__filter__link @if ($category->id == $id) active @endif">
+                            {{ $category->title }}
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#!" class="categories__filter__link">
-                            Квартира
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#!" class="categories__filter__link">
-                            Земля
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#!" class="categories__filter__link">
-                            Новостройки
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#!" class="categories__filter__link">
-                            Нежилые
-                        </a>
-                    </li>
+                    @endforeach
                 </ul>
 
                 <div class="categories__list">
